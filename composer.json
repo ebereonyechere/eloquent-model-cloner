@@ -1,0 +1,29 @@
+{
+    "name": "ebereonyechere/eloquent-model-cloner",
+    "description": "A simple package to clone models in laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eberechi Onyechere",
+            "email": "hello@ebereonyechere.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "EbereOnyechere\\ModelCloner\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EbereOnyechere\\ModelCloner\\ModelClonerServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "EbereOnyechere\\ModelCloner\\Facades"
+            }
+        }
+    }
+}
